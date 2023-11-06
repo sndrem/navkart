@@ -1,0 +1,61 @@
+:root {
+  --nav-farge: #c30000;
+  --lansert-farge: #33aa5f;
+}
+
+html,
+body {
+  padding: 1.5rem;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  padding: 2rem;
+}
+
+.regionsliste {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.lansert {
+  color: var(--lansert-farge);
+}
+
+.gjenstar {
+  color: var(--nav-farge);
+}
+
+svg {
+  transform: scale(100%);
+}
+
+path {
+  fill: var(--nav-farge);
+}
+
+path:hover {
+  fill: white !important;
+  cursor: pointer;
+}
